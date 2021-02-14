@@ -1,13 +1,20 @@
-/**
-* Template Name: Sailor - v4.0.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/*Scroll Bar*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #ffffff4b;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 0, 0);
+  border-radius: 8px;
+}
+
+
+/*General*/
 body {
   font-family: "Open Sans", sans-serif;
   
@@ -86,6 +93,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+#header .logo a:hover {
+ color: rgb(255, 0, 0);
 }
 
 #header .logo a {
@@ -516,6 +527,12 @@ section {
 
 .section-title {
   padding-bottom: 40px;
+
+}
+.section-subtitle{
+  padding-bottom: 15px;
+  border-top: 2px solid #000;
+  font-weight: 800;
 }
 
 .section-title h2 {
@@ -543,7 +560,7 @@ section {
   text-align: center;
   margin: 0;
   font-size: 24px;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #556270;
 }
 
@@ -805,6 +822,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+#portfolio{
+  background: #8080805c;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
