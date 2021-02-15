@@ -60,12 +60,12 @@
                 </ul> -->
             </ul>
           </li>
-          <li><a href="services.html">Искуство</a></li>
+          <li><a href="#">Искуство</a></li>
           <li class="dropdown"><a href="#"><span>Мероприятия</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
                 <li><a href="#">Мероприятия в округе</a></li>
             </ul>
-          <li><a href="pricing.html">Обьявления</a></li>
+          <li><a href="#">Обьявления</a></li>
           <li><a href="#contact" class="getstarted">Контакты</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -333,25 +333,25 @@
 
       <div class="col-lg-6 ">
         <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 369px;" allowfullscreen></iframe> -->
-        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24966.725722739444!2d-0.14750509842787096!3d38.53743976485902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6204dca62575c3%3A0x219fa90c0ff26eb5!2z0JHQtdC90ZbQtNC-0YDQvCwg0JDQu9GW0LrQsNC90YLQtSwg0IbRgdC_0LDQvdGW0Y8!5e0!3m2!1suk!2sus!4v1613157131698!5m2!1suk!2sus" style="border:0; width: 100%; height: 369px;"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      
+        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49933.4774626101!2d-0.1650149592188982!3d38.53740228456267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6204dca62575c3%3A0x219fa90c0ff26eb5!2z0JHQtdC90LjQtNC-0YDQvCwg0JDQu9C40LrQsNC90YLQtSwg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sde!4v1613406994624!5m2!1sru!2sde" style="border:0; width: 100%; height: 369px;"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
       </div>
 
       <div class="col-lg-6">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form action="mail/mail.php" method="POST" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
+              <input type="text" name="user_name" class="form-control" id="name" placeholder="Ваше имя" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email" required>
+              <input type="email" class="form-control" name="user_email" id="email" placeholder="Ваш Email" required>
             </div>
           </div>
           <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
+            <input type="text" class="form-control" name="user_subject" id="subject" placeholder="Тема" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+            <textarea class="form-control" name="user_message" rows="5" placeholder="Сообщение" required></textarea>
           </div>
           <div class="my-3">
             <div class="loading">Loading</div>

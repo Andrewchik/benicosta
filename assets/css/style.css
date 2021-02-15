@@ -558,10 +558,11 @@ section {
 
 .section-title p {
   text-align: center;
-  margin: 0;
+  margin: 30px 0;
   font-size: 24px;
   /* font-weight: 400; */
   color: #556270;
+  padding-top: 45px;
 }
 
 /*--------------------------------------------------------------
@@ -788,10 +789,11 @@ section {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:460px){
   .about-text{
-    
-    font-size: 14px;
+  text-align: center;
+    font-weight: 800;
+    font-size: 15px;
   
   }
 }
@@ -1202,3 +1204,4 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
