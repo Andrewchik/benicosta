@@ -1181,8 +1181,13 @@ section {
 }
 
 /*/------ Social Links -------/*/
+.credits{
+  background-color: rgb(68, 65, 65);
+  color: #fff;
+  font-weight: 900;
+}
 .social-links {
-  background-color: rgb(172, 159, 159);
+ 
   padding: 10px;
 }
 .social-links a {
@@ -1205,4 +1210,26 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+footer{
+  padding-top: 10px;
+  background: rgb(78, 78, 78);
+}
+
+.privacy{
+  text-align: center;
+ 
+  padding: 10px;
+}
+
+.privacy a{
+  color: #fff;
+  padding: 5px;
+ 
+}
+.privacy a:hover{
+  
+  text-decoration: underline;
+}
+
 

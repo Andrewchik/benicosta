@@ -1,0 +1,70 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+/*=================================================================
+  HERO AREA
+==================================================================*/
+.privacy-area {
+    
+    
+    background-image: url("../img/privacy-policy.jpg..webp");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 35px;
+    
+  }
+  
+  @media (max-width: 480px) {
+    .privacy-area {
+      padding: 80px 0;
+    }
+  }
+  
+  
+  .privacy-area .block {
+    color: rgb(255, 254, 254);
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.384);
+    align-items: center;
+  }
+  
+  @media (max-width: 480px) {
+    .privacy-area .block {
+      padding: 10px;
+    }
+  }
+  
+  .privacy-area .block h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+@media (max-width: 410px){
+    .privacy-area .block h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+}
+  
+  
+  
+  .privacy-area .block p {
+      text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.384);
+  }
+  
+ .block-privacy{
+    background: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+ }
+
+ .block-privacy h2{
+     text-align: center;
+ }
+ 
