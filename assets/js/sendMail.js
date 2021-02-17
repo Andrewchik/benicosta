@@ -1,3 +1,11 @@
+let inputName = document.querySelector('#name')
+let inputEmail = document.querySelector('#email')
+let inputSubject = document.querySelector('#subject')
+let inputMessage = document.querySelector('#message')
+
+
+
+
 // Отправка данных на сервер
 function send(event, php){
     console.log("Отправка запроса");
@@ -13,14 +21,21 @@ function send(event, php){
             if (json.result == "success") {
                 // Если сообщение отправлено
                 alert("Сообщение отправлено");
+                // inputName.value = ''
+                // inputEmail.value = ''
+                // inputSubject.value = ''
+                // inputMessage.value = ''
             } else {
                 // Если произошла ошибка
                 alert("Ошибка. Сообщение не отправлено");
             }
+            
         // Если не удалось связаться с php файлом
         } else {alert("Ошибка сервера. Номер: "+req.status);}}; 
-    
-    // Если не удалось отправить запрос. Стоит блок на хостинге
+       
+        // Если не удалось отправить запрос. Стоит блок на хостинге
     req.onerror = function() {alert("Ошибка отправки запроса");};
     req.send(new FormData(event.target));
     }
+
+    

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -37,18 +39,18 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Benicosta</a></h1>
+      <h1 class="logo me-auto"><a href="index">Benicosta</a></h1>
     
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="index" class="active">Главная</a></li>
 
           <li class="dropdown"><a href="#"><span>Недвижимость</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html">Аренда</a></li>
-              <li><a href="team.html" >Продажа</a></li>
+              <li><a href="rent">Аренда</a></li>
+              <li><a href="purchase" >Продажа</a></li>
             </ul>
           </li>
           <li><a href="#">Искуство</a></li>
@@ -327,8 +329,7 @@
 
       <div class="col-lg-6 ">
         <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 369px;" allowfullscreen></iframe> -->
-        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49933.4774626101!2d-0.1650149592188982!3d38.53740228456267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6204dca62575c3%3A0x219fa90c0ff26eb5!2z0JHQtdC90LjQtNC-0YDQvCwg0JDQu9C40LrQsNC90YLQtSwg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sde!4v1613406994624!5m2!1sru!2sde" style="border:0; width: 100%; height: 369px;"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49933.4774626101!2d-0.1650149592188982!3d38.53740228456267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6204dca62575c3%3A0x219fa90c0ff26eb5!2z0JHQtdC90LjQtNC-0YDQvCwg0JDQu9C40LrQsNC90YLQtSwg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sde!4v1613406994624!5m2!1sru!2sde" style="border:0; width: 100%; height: 369px;"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
 
       <div class="col-lg-6">
@@ -345,7 +346,7 @@
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+            <textarea class="form-control" name="message" rows="5" id="message" placeholder="Сообщение" required></textarea>
           </div>
           <div class="text-center"><button type="submit">Отправить</button></div>
           <!-- <small class="text-muted">(При нажатии на кнопку, вы даете право на оброботку ваших даных)</small> -->
@@ -371,7 +372,7 @@
     </div>
   </div>
   <div class="privacy credits">
-    <a href="privacy.html">Политика конфиденциальности</a>
+    <a href="privacy">Политика конфиденциальности</a>
   </div>
 </footer>
 
@@ -391,6 +392,11 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Maps -->
+
+ 
+ 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

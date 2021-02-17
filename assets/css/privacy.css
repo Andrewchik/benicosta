@@ -46,7 +46,9 @@ li {
       }
 }
   
-  
+.privacy-text {
+    text-align: center;
+  }
   
   .privacy-area .block p {
       text-align: center;
