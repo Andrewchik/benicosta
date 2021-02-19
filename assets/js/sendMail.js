@@ -6,6 +6,8 @@ let inputMessage = document.querySelector('#message')
 
 
 
+
+
 // Отправка данных на сервер
 function send(event, php){
     console.log("Отправка запроса");
@@ -21,10 +23,7 @@ function send(event, php){
             if (json.result == "success") {
                 // Если сообщение отправлено
                 alert("Сообщение отправлено");
-                // inputName.value = ''
-                // inputEmail.value = ''
-                // inputSubject.value = ''
-                // inputMessage.value = ''
+               
             } else {
                 // Если произошла ошибка
                 alert("Ошибка. Сообщение не отправлено");
@@ -37,5 +36,7 @@ function send(event, php){
     req.onerror = function() {alert("Ошибка отправки запроса");};
     req.send(new FormData(event.target));
     }
+
+
 
     

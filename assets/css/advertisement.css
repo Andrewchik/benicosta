@@ -301,140 +301,124 @@
   }
 
 
-  /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-    width: 100%;
-    height: 40vh;
-    background: url("../img/slide/slide-4.jpg") center center;
-    background-size: cover;
-    position: relative;
-    margin-top: 70px;
-    padding: 0;
-    box-shadow: 0px 20px 25px #0000008f;
-  }
-  
-  #hero:before {
-    content: "";
-    background: rgba(56, 64, 70, 0.582);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #hero .container {
-    z-index: 2;
-  }
-  
-  #hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-  }
-  
-  #hero h1 span {
-   
-    color: #00ff62;
-  }
-  
-  #hero h2 {
-    color: rgb(255, 255, 255);
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-  
-  #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    letter-spacing: 2px;
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 4px;
-    transition: ease-in-out 0.3s;
-    color: #fff;
-    background: #3498db;
-    text-transform: uppercase;
-  }
-  
-  #hero .btn-get-started:hover {
-    background: #4ea5e0;
-  }
-  
-  @media (max-width: 992px) {
-    #hero {
-      height: calc(100vh - 70px);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #hero h1 {
-      font-size: 30px;
-      line-height: 36px;
-    }
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  }
-  
+
+
 /*--------------------------------------------------------------
-# Home Block (block-1)
+# Contact
 --------------------------------------------------------------*/
-
-#block-1{
-  padding-top: 40px;
-  background: #B7EC73;
-  padding-bottom: 40px;
-}
-
-#block-1 .section-title h2{
-font-size: 33px;
-font-weight: bold;
-margin-bottom: 34px;
-}
-
-#block-1 .about-image img{
-  margin: 7px;
-  box-shadow: 0 0 25px rgb(0, 0, 0); 
-}
-
- #block-1 .about-text p{
-font-size: 19px;
-font-weight: 500;
-} 
-
-#block-1 .about-text p span {
-  color: rgb(224, 21, 14);
-  cursor: pointer;
-}
-
-@media (max-width: 574px){
-  #block-1 .btn{
+#ad {
     margin-bottom: 20px;
-  }
+    border-bottom: 5px solid rgb(255, 0, 0);
+    background: #b5d1ec;
+   
+}
+.contact-form{
+  background: rgb(307 342 207);
+  margin-top: 75px;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+    margin-bottom: 10px;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    width: 50%;
+    margin-top: 3%;
+   
+}
+.contact-form form{
+    padding: 14%;
+   
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+
+.contact-form{
+    box-shadow: 10px 15px 5px #556270;
+}
+.contact-form h2{
+    margin-bottom: 1%;
+    margin-top: -10%;
+    text-align: center;
+    color: rgb(13, 28, 240);
+}
+
+.contact-form p{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+}
+.contact-form .btnSendPost {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+.btnSend{
+  text-align: center;
+}
+
+@media(max-width: 679px){
+    .contact-form h2{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #0062cc;
+        font-size: 20px;
+    }
+    .contact-form p{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #030303;
+        font-size: 12px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Contact END
+--------------------------------------------------------------*/
+
+form{
+    padding: 0;
+}
+/*--------------------------------------------------------------
+# POSTS
+--------------------------------------------------------------*/
+#posts .no-posts{
+    font-size: 40px;
+    color: #8a9792;
+  
 }
 
 
 
-/*--------------------------------------------------------------
-# END Home Block (block-1)
---------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-# ПОДСКАЗКА
+# POSTS END
 --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# END ПОДСКАЗКА
---------------------------------------------------------------*/
+
+
 
 
 

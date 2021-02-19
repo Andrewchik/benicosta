@@ -45,16 +45,7 @@
           <li class="dropdown"><a href="#"><span>Недвижимость</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html">Аренда</a></li>
-              <li><a href="team.html" >Продажа</a></li>
-              <!-- <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a> -->
-                <!-- <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul> -->
+              <li><a href="purchase" >Продажа</a></li>
             </ul>
           </li>
           <li><a href="#">Искуство</a></li>
@@ -62,7 +53,7 @@
             <ul>
                 <li><a href="#">Мероприятия в округе</a></li>
             </ul>
-          <li><a href="#">Обьявления</a></li>
+          <li><a href="advertisement">Обьявления</a></li>
           <li><a href="#contact" class="getstarted">Контакты</a></li>
           <li><a href="#" id="ru" class="lang"><img src="assets/img/language-flags/ru.png" alt="ru"></a></li>
           <li><a href="#" id="sp" class="lang"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>

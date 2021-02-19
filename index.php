@@ -58,7 +58,7 @@
             <ul>
                 <li><a href="#">Мероприятия в округе</a></li>
             </ul>
-          <li><a href="#">Обьявления</a></li>
+          <li><a href="advertisement">Обьявления</a></li>
           <li><a href="#contact" class="getstarted">Контакты</a></li>
           <li><a href="#" id="ru" class="lang"><img src="assets/img/language-flags/ru.png" alt="ru"></a></li>
           <li><a href="#" id="sp" class="lang"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>
@@ -82,7 +82,7 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">КЛУБ ПУТИШЕСТВИНИКОВ</h2>
+              <h2 class="animate__animated animate__fadeInDown">КЛУБ ПУТEШЕСТВИНИКОВ</h2>
               <p class="animate__animated animate__fadeInUp">Большой выбор мест для путишествия только тут</p>
               <a href="https://benicostatour.com/home.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
             </div>

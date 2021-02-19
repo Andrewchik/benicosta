@@ -3,3 +3,5 @@ RewriteEngine On
 RewriteRule ^index?$ index.php
 RewriteRule ^privacy?$ privacy.php
 RewriteRule ^purchase?$ purchase.php
+RewriteRule ^rent?$ rent.php
+RewriteRule ^advertisement?$ advertisement.php

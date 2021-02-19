@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Продажа недвижимости - Benicosta.com</title>
+    <title>Аренда недвижимости - Benicosta.com</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
   
@@ -44,8 +44,8 @@
 
           <li class="dropdown"><a href="#" class="active"><span>Недвижимость</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="rent">Аренда</a></li>
-              <li><a href="purchase" class="active">Продажа</a></li>
+              <li><a href="rent" class="active">Аренда</a></li>
+              <li><a href="purchase" >Продажа</a></li>
             </ul>
           </li>
           <li><a href="#">Искуство</a></li>
@@ -68,52 +68,13 @@
      <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
-      <h1>ПРОДАЖА <span> НЕДВИЖИМОСТИ</span></h1>
-      <h2>Здесь вы можите посмотреть варианты недвижимости в Бенидорме(Испания), связатся с нами и приобрести!</h2>
+      <h1>АРЕНДА <span> НЕДВИЖИМОСТИ</span></h1>
+     
       <
     </div>
   </section><!-- End Hero -->
-  <div id="block-1">
-  <section class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>ЛЮКСОВАЯ  ВИЛЛА</h2>
-				
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<p>На продажу в Испании с оформлением <span title="sfs">золотой резиденции</span>!<br>
-              Жилой комплекс Managua VII расположен в популярном, тихом и зеленом районе Бенидорма, рядом с лучшим песчаным пляжем побережья Коста Бланка, недалеко от центра города, торгового центра, рядом со спортивными площадками, парками, футбольными полями и лучшими полями для гольфа.</p>
-            <h3 class="text-center">Характеристика</h3>
-						<ul>
-							<li>В комплексе 6 участков площадью более 500м2.</li>
-							<li>Каждая вилла имеет 260м2.</li>
-							<li>Полностью оборудованный отдельный бассейн, парковочное место, встроенную кухню, бытовую технику марки Boshe, 4 спальни, 4 ванные комнаты, внутреннее и внешнее освещение от застройщика.</li>
-							<li>В подвальном помещении с естественным освещением можно выбрать дизайн и планировку.</li>
-						</ul>
-            <div class="alert alert-danger text-center" role="alert">
-              Обращаться только реально заинтересованным лицам.
-            </div>
-						<a href="#" class="btn btn-success">Связаться с консультантом</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img style="width: 100%;margin: 0px auto;" src="assets/img/purchases/house-1.png" alt="house-1">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>	 
-    <!-- END Main container -->
-  </div>
-    <!-- Main container -->
-    
+
+
 
 <footer>
     <div class=" sotial-links text-center">
