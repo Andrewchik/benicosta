@@ -30,17 +30,20 @@
   
 </head>
 <body>
+
+<!-- PRELOADER -->
+<?php include_once('blocks/preloader.php') ?>
  <!-- ======= Header ======= -->
  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index">Benicosta</a></h1>
+      <h1 class="logo me-auto"><a href="/">Benicosta</a></h1>
     
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index">Главная</a></li>
+          <li><a href="/">Главная</a></li>
 
           <li class="dropdown"><a href="#"><span>Недвижимость</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -48,16 +51,20 @@
               <li><a href="purchase" >Продажа</a></li>
             </ul>
           </li>
-          <li><a href="#">Искуство</a></li>
+          <li><a href="arts">Искуство</a></li>
           <li class="dropdown"><a href="#"><span>Мероприятия</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="#">Мероприятия в округе</a></li>
+                <li><a href="events">Мероприятия в округе</a></li>
             </ul>
           <li><a href="advertisement">Обьявления</a></li>
-          <li><a href="#contact" class="getstarted">Контакты</a></li>
-          <li><a href="#" id="ru" class="lang"><img src="assets/img/language-flags/ru.png" alt="ru"></a></li>
-          <li><a href="#" id="sp" class="lang"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>
-          <li><a href="#" id="en" class="lang"><img src="assets/img/language-flags/eg.png" alt="en"></a></li>
+          <li><a data-toggle="modal" data-target="#myModal" href="#myModal" class="getstarted text-decoration-none">Контакты</a></li>
+          <li class="dropdown"><a href="#"><img src="assets/img/language-flags/ru.png" alt="ru"> <i class="bi bi-chevron-down"></i></a>
+            <ul style="width: 55px;">
+              <li><a href="about.html"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>
+              <li><a href="about.html"><img src="assets/img/language-flags/eg.png" alt="eg"></a></li>
+            
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -106,8 +113,9 @@
  <ul>
      <li>3.1. Фамилия, имя, отчество;</li>
      <li>3.2. Электронный адрес;</li>
-     <li>3.3. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
-     <li>3.4. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
+     <li>3.3. Номер телефона;</li>
+     <li>3.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
+     <li>3.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
  </ul>
 
 <h2>4. Цели обработки персональных данных</h2>
@@ -154,24 +162,48 @@
 	</div>
 </section>	
 
-<footer>
-    <div class=" sotial-links text-center">
-    
-      <div class="credits">
-        Created by <a href="#">VGORYACHO</a>
+
+ <!-- MODAL FOR CONTACT -->
+
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title text-center" id="myModalLabel">СВЯЗАТЬСЯ С НАМИ</h4>
+            </div>
+            <div class="modal-body text-center">
+              <div class="row centered">
+              <p>Адрес: Spain, Benidorm<br />Email: benicosta.com@gmail.com<br />Viber / What's app / Mobile: +380 66 847 8036<br /></p>
+                <p>Мы работаем 24/7, если есть какие-то вопросы, задавай!</p>
+                
+                <form enctype="multipart/form-data" id="form" method="post" role="form" onsubmit="send(event, 'send.php')" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" id="message" placeholder="Сообщение" required></textarea>
+          </div>
+          <div class="text-center"><button type="submit" class='btn btn-success'>Отправить</button></div>
+          <!-- <small class="text-muted">(При нажатии на кнопку, вы даете право на оброботку ваших даных)</small> -->
+        </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-    <div class="privacy credits">
-      <a href="privacy">Политика конфиденциальности</a>
-    </div>
-  </footer>
+
+
+<?php require('blocks/footer.php') ?>
   
 
 

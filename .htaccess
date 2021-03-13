@@ -5,3 +5,8 @@ RewriteRule ^privacy?$ privacy.php
 RewriteRule ^purchase?$ purchase.php
 RewriteRule ^rent?$ rent.php
 RewriteRule ^advertisement?$ advertisement.php
+RewriteRule ^arts?$ arts.php
+RewriteRule ^events?$ events.php
+
+ErrorDocument 404 https://www.benicosta.com/errors/404.php
+

@@ -403,15 +403,183 @@ form{
 /*--------------------------------------------------------------
 # POSTS
 --------------------------------------------------------------*/
-#posts .no-posts{
+/* #posts .no-posts{
     font-size: 40px;
     color: #8a9792;
   
+} */
+
+
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+#schedule .section-header h2{
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
 }
 
 
+#schedule .schedule-item:hover {
+  background-color: rgba(226, 226, 226, 0.274);
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 290px;
+  height: 249px;
+  overflow: hidden;
+  border-radius: 10%;
+  float: left;
+  margin: 0px 35px 10px 0;
+}
+
+@media (max-width: 468px){
+  #schedule .schedule-item .speaker {
+        width: 290px;
+        height: 249px;
+        overflow: hidden;
+        border-radius: 10%;
+        margin: 0 auto;
+        float: none;
+        
+    }
+
+    #schedule .schedule-item h4{
+     
+      margin-top: 25px;
+      
+    }
+
+    
+    #schedule .schedule-item h5{
+     
+      text-align: center;
+      
+    }
+
+    #schedule .schedule-item h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    #schedule .schedule-item p {
+      
+      text-align: center;
+    }
+
+    #schedule .col-md-2{
+      text-align: center;
+    }
+}
 
 
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # POSTS END
@@ -422,6 +590,40 @@ form{
 
 
 
+/***** MODAL CONTACT *****/
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-header {
+  background: #bdbdbd;
+  color: white;
+}
+
+.modal-header h4 {
+  font-weight: 700;
+}
+
+.modal-body {
+  background: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.modal-header .close{
+  margin-top: -2px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+  margin-top: 0px;
+}
 
 
 
@@ -429,56 +631,3 @@ form{
 
 
 
-/*--------------------------------------------------------------
-# FOOTER
---------------------------------------------------------------*/
-.credits{
-    background-color: rgb(68, 65, 65);
-    color: #fff;
-    font-weight: 900;
-  }
-  .social-links {
-   
-    padding: 10px;
-  }
-  .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #2f4d5a;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  .social-links a:hover {
-    background: #67b0d1;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  footer{
-    padding-top: 10px;
-    background: rgb(78, 78, 78);
-  }
-  
-  .privacy{
-    text-align: center;
-   
-    padding: 10px;
-  }
-  
-  .privacy a{
-    color: #fff;
-    padding: 5px;
-   
-  }
-  .privacy a:hover{
-    
-    text-decoration: underline;
-  }

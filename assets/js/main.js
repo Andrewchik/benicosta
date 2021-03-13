@@ -51,6 +51,9 @@
     onscroll(document, headerScrolled)
   }
 
+
+  
+
   /**
    * Back to top button
    */
@@ -89,14 +92,7 @@
   /**
    * Hero carousel indicators
    */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
 
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
 
   /**
    * Porfolio isotope and filter
@@ -123,6 +119,14 @@
       }, true);
     }
 
+    // PreLoader
+    let mask = document.querySelector('.mask')
+    mask.classList.add('hide')
+    setTimeout(() => {
+      
+      mask.remove()
+    }, 600);
+
   });
 
   /**
@@ -135,19 +139,29 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // new Swiper('.portfolio-details-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
+
+  // var swiper = new Swiper('.swiper-container', {
+  //   slidesPerView: 3,
+  //   spaceBetween: 30,
+  //   freeMode: true,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  // });
 
   /**
    * Initiate portfolio details lightbox 
@@ -174,5 +188,44 @@
       }
     })
   }
+  /**
+   * Filter "Arts"
+   */
+  const filterTab = document.querySelectorAll('.tab-content')
+  document.querySelector('.tabs-nav').addEventListener('click', event => {
+    console.log(event.target.dataset['filter']);
+  if (event.target.tagName !== 'LI') return false
+  let filterClass = event.target.dataset['filter']
+ 
+
+  filterTab.forEach( elem => {
+    elem.classList.remove('hide')
+if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+  
+  elem.classList.add('hide')
+}
+  })
+
+
+  })
+
+
+
 
 })()
+
+
+
+  /**
+   * Preloader
+   */
+
+  // let mask = document.querySelector('.mask')
+
+  // window.addEventListener('load', ()=>{
+  //   mask.classList.add('hide')
+  //   setTimeout(() => {
+      
+  //     mask.remove()
+  //   }, 600);
+  // })

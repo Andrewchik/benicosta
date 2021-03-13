@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -26,6 +24,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Modal Window -->
+ 
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -34,18 +35,18 @@
 </head>
 
 <body>
-
+<?php include_once('blocks/preloader.php') ?>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index">Benicosta</a></h1>
+      <h1 class="logo me-auto"><a href="/">Benicosta</a></h1>
     
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index" class="active">Главная</a></li>
+          <li><a href="/" class="active">Главная</a></li>
 
           <li class="dropdown"><a href="#"><span>Недвижимость</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -53,26 +54,32 @@
               <li><a href="purchase" >Продажа</a></li>
             </ul>
           </li>
-          <li><a href="#">Искуство</a></li>
+          <li><a href="arts">Искуство</a></li>
           <li class="dropdown"><a href="#"><span>Мероприятия</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="#">Мероприятия в округе</a></li>
+                <li><a href="events">Мероприятия в округе</a></li>
             </ul>
           <li><a href="advertisement">Обьявления</a></li>
-          <li><a href="#contact" class="getstarted">Контакты</a></li>
-          <li><a href="#" id="ru" class="lang"><img src="assets/img/language-flags/ru.png" alt="ru"></a></li>
-          <li><a href="#" id="sp" class="lang"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>
-          <li><a href="#" id="en" class="lang"><img src="assets/img/language-flags/eg.png" alt="en"></a></li>
+          <li><a href = "#contact" class="getstarted">Контакты</a></li>
+          <li class="dropdown"><a href="#"><img src="assets/img/language-flags/ru.png" alt="ru"> <i class="bi bi-chevron-down"></i></a>
+            <ul style="width: 55px;">
+              <li><a href="lang/index_es.php"><img src="assets/img/language-flags/sp.png" alt="sp"></a></li>
+              <li><a href="about.html"><img src="assets/img/language-flags/eg.png" alt="eg"></a></li>
+            
+            </ul>
+          </li>
+      
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+ 
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div id="heroCarousel" data-bs-interval="4500" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" data-bs-interval="3000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
@@ -84,18 +91,21 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">КЛУБ ПУТEШЕСТВИНИКОВ</h2>
               <p class="animate__animated animate__fadeInUp">Большой выбор мест для путишествия только тут</p>
-              <a href="https://benicostatour.com/home.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+              <a href="https://benicostatour.com/home.html" class="btn-get-started animate__animated animate__fadeInUp">Подробнее</a>
+             
+              
             </div>
           </div>
         </div>
-
+       
         <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">ОРГАНИЗАЦИЯ МЕРОПРИЯТИЙ</h2>
               <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-              <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+              <a href="events" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+             
             </div>
           </div>
         </div>
@@ -106,7 +116,8 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">ИСКУСТВО</h2>
               <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-              <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+              <a href="arts" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+             
             </div>
           </div>
         </div>
@@ -117,7 +128,9 @@
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">НЕДВИЖИМОСТЬ <br> ПРОДАЖА / AРЕНДА</h2>
                 <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
-                <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+                <button id="myModal" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</button>
+               
+               
               </div>
             </div>
           </div>
@@ -128,11 +141,11 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">ДОСКА ОБЬЯВЛЕНИЙ</h2>
               <p class="animate__animated animate__fadeInUp">Здесь вы можите оставлять свои Обьявления</p>
-              <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+              <a href="advertisement" class="btn-get-started animate__animated animate__fadeInUp scrollto">Подробнее</a>
+             
             </div>
           </div>
         </div>
-
       </div>
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
@@ -142,32 +155,43 @@
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
       </a>
-
+      
     </div>
+    
   </section><!-- End Hero -->
+
+  <!-- MODAL -->
+  <div class="wrap">
+  <div class="modal js-modal">
+    <div class="modal-image">
+      <svg viewBox="0 0 32 32" style="fill:#48DB71"><path d="M1 14 L5 10 L13 18 L27 4 L31 8 L13 26 z"></path></svg>
+    </div>
+    <h1>Nice job!</h1>
+    <p>To dismiss click the button below</p>
+    <button class="js-close">Dismiss</button>
+  </div>
+</div>
+  <!-- END MODAL -->
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
+    
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
 
-        <div class="row">
-          <div class="col-lg-6 video-box">
-            <!-- <img src="assets/img/island.png" class="img-fluid" alt=""> -->
-            <!-- <a href="https://www.youtube.com/watch?v=VzlwsUpvSp8" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
-            <iframe class =  "video-youtube"  src="https://www.youtube.com/embed/VzlwsUpvSp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-            <p class="about-text">Основа нашей философии — страсть к приключениям и открытиям. 
+        <div class="text-center">
+          <h2>Про нас</h2>
+          <p class="about-text">Основа нашей философии — страсть к приключениям и открытиям. 
               Мы предлагаем вам разнообразные форматы туров, забираем вас с аэропорта и предоставляем гида. 
-              Выбирайте доступные туры на нашем сайте <a href="https://benicostatour.com/home.html">benocostatour.com</a> или свяжитесь с нами для разработки индивидуального путешествия.</p>
+              Выбирайте доступные туры на нашем сайте <span style= "color:red;">benocostatour.com</span> или свяжитесь с нами для разработки индивидуального путешествия.</p>
+          <a class="btn-tour" href="https://benicostatour.com/home.html"><span>Туры от BENICOSTA</span></a>
         </div>
 
       </div>
-    </section>
-   <!-- End About Section -->
+    </section><!-- End Cta Section -->
+
+   
 
  <!-- ======= Places Section ======= -->
  <section id="portfolio" class="portfolio">
@@ -182,7 +206,7 @@
 
     <div class="row portfolio-container">
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+      <div class="col-lg-4 col-md-6 portfolio-item ">
         <div class="portfolio-wrap">
           <img src="assets/img/places/benidorm.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -196,7 +220,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item ">
         <div class="portfolio-wrap">
           <img src="assets/img/places/benidorm2.png" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -210,7 +234,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="col-lg-4 col-md-6 portfolio-item ">
         <div class="portfolio-wrap">
           <img src="assets/img/places/benidorm3.jpg" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -225,18 +249,72 @@
       </div>
       </div>
       
+
       <div class="section-title">
         <p>Бенидорм не оставит равнодушным никого. 365 дней в году этот никогда неспящий город, предлагает своим гостям широкую непревзойденную гамму возможностей и высококачественных услуг.</p>
       </div>
+
+
+      <div class="section-title">
+        <p class = "section-subtitle">Юрты и кемпинги</p>
+      </div>
+    <div class="row portfolio-container">
+
+      <div class="col-lg-4 col-md-6 portfolio-item ">
+        <div class="portfolio-wrap">
+          <img src="assets/img/places/yurta1-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <!-- <h4>App 1</h4>
+            <p>App</p> -->
+            <div class="portfolio-links">
+              <a href="assets/img/places/yurta1-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/places/yurta1-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <!-- <h4>Web 3</h4>
+            <p>Web</p> -->
+            <div class="portfolio-links">
+              <a href="assets/img/places/yurta1-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/places/yurta1-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <!-- <h4>App 2</h4>
+            <p>App</p> -->
+            <div class="portfolio-links">
+              <a href="assets/img/places/yurta1-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="section-title">
+        <p>В 17км от Бенидорма а кампинге Fuentes del Algar рядом с водопадами. Полностью укомплектованы, можно приготовить завтрак, зона барбекю и вид на горы, частная парковка рядом с каждой Юртой.</p>
+      </div>
+
 
       <div class="section-title">
         <p class = "section-subtitle">Город Алькой</p>
       </div>
     <div class="row portfolio-container">
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+      <div class="col-lg-4 col-md-6 portfolio-item">
         <div class="portfolio-wrap">
-          <img src="assets/img/places/alcoy1.jpg" class="img-fluid" alt="">
+          <img src="assets/img/places/alcoy1.jpg" class="img-fluid" alt="alcoy1">
           <div class="portfolio-info">
             <!-- <h4>App 1</h4>
             <p>App</p> -->
@@ -248,9 +326,9 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item">
         <div class="portfolio-wrap">
-          <img src="assets/img/places/alcoy2.jpg" class="img-fluid" alt="">
+          <img src="assets/img/places/alcoy2.jpg" class="img-fluid" alt="alcoy2">
           <div class="portfolio-info">
             <!-- <h4>Web 3</h4>
             <p>Web</p> -->
@@ -262,9 +340,9 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="col-lg-4 col-md-6 portfolio-item">
         <div class="portfolio-wrap">
-          <img src="assets/img/places/alcoy3.jpg" class="img-fluid" alt="">
+          <img src="assets/img/places/alcoy3.jpg" class="img-fluid" alt="alcoy3">
           <div class="portfolio-info">
             <!-- <h4>App 2</h4>
             <p>App</p> -->
@@ -278,13 +356,15 @@
       </div>
       <div class="section-title">
         <p>Алькой - муниципалитет и город, расположенный на юго-востоке Испании, в провинции Аликанте, Валенсийское сообщество. Это удивительный город разделённый на две части и соединённый мостами В котором 59 354 жителей. Город имеет большую историческую и промышленую ценость.</p>
+      <div class="text-center"><a class="btn-restaurant" href="https://www.facebook.com/cafeteria.cerveceria.quico/?ti=as"><span>Ресторан "Cervecería Quico"</span></a></div>
+     
       </div>
       
        
       
-      <div class="button-places">
+      <!-- <div class="button-places">
         <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto">Больше мест</a>
-      </div>
+      </div> -->
       
       
   </div>
@@ -357,25 +437,8 @@
 
   </div>
 </section><!-- End Contact Section -->
-<footer>
-  <div class=" sotial-links text-center">
-  
-    <div class="credits">
-      Created by <a href="#">VGORYACHO</a>
-    </div>
-    <div class="social-links mt-3">
-      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-    </div>
-  </div>
-  <div class="privacy credits">
-    <a href="privacy">Политика конфиденциальности</a>
-  </div>
-</footer>
 
+<?php require('blocks/footer.php') ?>
 
 
 
@@ -397,6 +460,9 @@
 
  
  
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!-- Modal window -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
